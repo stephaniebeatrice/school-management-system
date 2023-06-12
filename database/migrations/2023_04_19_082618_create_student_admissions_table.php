@@ -19,6 +19,7 @@ return new class extends Migration
             $table->enum("gender", ["male", "female"]);
             $table->date("dob");
             $table->integer("age");
+            $table->string("email_address");
             $table->string("nationality");
             $table->string("address");
             $table->string("grade");

@@ -32,25 +32,30 @@ class StudentAdmissionController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Registration $registration)
+    public function show(StudentAdmission $registration, $id)
     {
         $registration = StudentAdmission::find($id);
         if (!$registration) {
             abort(code: 404, message: "Invalid Information");
-        }
+        }else{
         return response()->json([
             "message" => "Student retrieved successfully.",
             "data" => StudentAdmission::find($id),
         ]);
+    }
     }
 
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Registration $registration, $id)
+    public function update(Request $request, StudentAdmission $registration, $id)
     {
+        $registration = StudentAdmission::findorFail($id);
         $registration->update($request->all());
+
+        //$registration = StudentAdmission::find($id);
+
         return response()->json([
             "message" => "Student info updated successfully.",
             "data" => $registration,
@@ -61,12 +66,13 @@ class StudentAdmissionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Registration $registration, $id)
+    public function destroy(StudentAdmission $registration, $id)
     {
-        $student->delete();
+        $registration = StudentAdmission::find($id);
+        $registration->delete();
         return response()->json([
             "message" => "Student was deleted successfully.",
-            "data" => $student,
+            "data" => $registration,
         ]);
     }
 }

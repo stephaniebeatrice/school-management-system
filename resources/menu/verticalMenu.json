@@ -237,15 +237,6 @@
       ]
     },
     {
-      "url": "icons/boxicons",
-      "icon": "menu-icon tf-icons bx bx-crown",
-      "name": "Boxicons",
-      "slug": "icons-boxicons"
-    },
-    {
-      "menuHeader": "Forms & Tables"
-    },
-    {
       "name": "Form Elements",
       "icon": "menu-icon tf-icons bx bx-detail",
       "slug": "forms",
@@ -286,21 +277,40 @@
       "slug": "tables-basic"
     },
     {
-      "menuHeader": "Misc"
+      "url": "student admission",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "name": "Admission Form",
+      "slug": "student-admission"
     },
     {
-      "url": "https://themeselection.com/support/",
-      "icon": "menu-icon tf-icons bx bx-support",
-      "name": "Support",
-      "slug": "support",
-      "target": "_blank"
+      "url": "tables/",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "name": "View Students",
+      "slug": "students-view"
     },
     {
-      "url": "https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/laravel-introduction.html",
-      "icon": "menu-icon tf-icons bx bx-file",
-      "name": "Documentation",
-      "slug": "documentation",
-      "target": "_blank"
+      "url": "form/HostelBooking",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "name": "Hostel Booking Form",
+      "slug": "hostel booking"
+    },
+    {
+      "url": "parents details",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "name": "View Parents Details",
+      "slug": "parents details"
+    },
+    {
+      "url": "teachers details",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "name": "Teachers Form",
+      "slug": "student-admission"
+    },
+    {
+      "url": "view teachers",
+      "icon": "menu-icon tf-icons bx bx-table",
+      "name": "View Teachers",
+      "slug": "student-admission"
     }
   ]
 }

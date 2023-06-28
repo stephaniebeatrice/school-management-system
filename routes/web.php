@@ -19,10 +19,6 @@ $controller_path = 'App\Http\Controllers';
 Route::get('/', $controller_path . '\dashboard\Analytics@index')->name('dashboard-analytics');
 
 // layout
-Route::get('/layouts/without-menu', $controller_path . '\layouts\WithoutMenu@index')->name('layouts-without-menu');
-Route::get('/layouts/without-navbar', $controller_path . '\layouts\WithoutNavbar@index')->name('layouts-without-navbar');
-Route::get('/layouts/fluid', $controller_path . '\layouts\Fluid@index')->name('layouts-fluid');
-Route::get('/layouts/container', $controller_path . '\layouts\Container@index')->name('layouts-container');
 Route::get('/layouts/blank', $controller_path . '\layouts\Blank@index')->name('layouts-blank');
 
 // pages
@@ -59,14 +55,12 @@ Route::get('/ui/spinners', $controller_path . '\user_interface\Spinners@index')-
 Route::get('/ui/tabs-pills', $controller_path . '\user_interface\TabsPills@index')->name('ui-tabs-pills');
 Route::get('/ui/toasts', $controller_path . '\user_interface\Toasts@index')->name('ui-toasts');
 Route::get('/ui/tooltips-popovers', $controller_path . '\user_interface\TooltipsPopovers@index')->name('ui-tooltips-popovers');
-Route::get('/ui/typography', $controller_path . '\user_interface\Typography@index')->name('ui-typography');
 
 // extended ui
 Route::get('/extended/ui-perfect-scrollbar', $controller_path . '\extended_ui\PerfectScrollbar@index')->name('extended-ui-perfect-scrollbar');
 Route::get('/extended/ui-text-divider', $controller_path . '\extended_ui\TextDivider@index')->name('extended-ui-text-divider');
 
-// icons
-Route::get('/icons/boxicons', $controller_path . '\icons\Boxicons@index')->name('icons-boxicons');
+
 
 // form elements
 Route::get('/forms/basic-inputs', $controller_path . '\form_elements\BasicInput@index')->name('forms-basic-inputs');

@@ -12,26 +12,6 @@
       "slug": "layouts",
       "submenu": [
         {
-          "url": "/layouts/without-menu",
-          "name": "Without menu",
-          "slug": "layouts-without-menu"
-        },
-        {
-          "url": "/layouts/without-navbar",
-          "name": "Without navbar",
-          "slug": "layouts-without-navbar"
-        },
-        {
-          "url": "/layouts/container",
-          "name": "Container",
-          "slug": "layouts-container"
-        },
-        {
-          "url": "/layouts/fluid",
-          "name": "Fluid",
-          "slug": "layouts-fluid"
-        },
-        {
           "url": "/layouts/blank",
           "name": "Blank",
           "slug": "layouts-blank",
@@ -51,16 +31,6 @@
           "url": "/pages/account-settings-account",
           "name": "Account",
           "slug": "pages-account-settings-account"
-        },
-        {
-          "url": "/pages/account-settings-notifications",
-          "name": "Notifications",
-          "slug": "pages-account-settings-notifications"
-        },
-        {
-          "url": "/pages/account-settings-connections",
-          "name": "Connections",
-          "slug": "pages-account-settings-connections"
         }
       ]
     },
@@ -277,40 +247,102 @@
       "slug": "tables-basic"
     },
     {
-      "url": "student admission",
-      "icon": "menu-icon tf-icons bx bx-detail",
-      "name": "Admission Form",
-      "slug": "student-admission"
+      "menuHeader": "Student Details"
     },
     {
-      "url": "tables/",
-      "icon": "menu-icon tf-icons bx bx-table",
-      "name": "View Students",
-      "slug": "students-view"
+      "name": "Student Details",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "slug": "form-layouts",
+      "submenu": [
+        {
+          "url": "student admission",
+          "name": "Admission Form",
+          "slug": "student-admission"
+        },
+        {
+          "url": "parents details",
+          "name": "View Parents Details",
+          "slug": "parents details"
+        },
+        {
+          "url": "tables/",
+          "name": "View Students",
+          "slug": "students-view"
+        }
+      ]
     },
     {
       "url": "form/HostelBooking",
       "icon": "menu-icon tf-icons bx bx-detail",
-      "name": "Hostel Booking Form",
+      "name": "Hostel Booking",
       "slug": "hostel booking"
     },
     {
-      "url": "parents details",
-      "icon": "menu-icon tf-icons bx bx-table",
-      "name": "View Parents Details",
-      "slug": "parents details"
+      "menuHeader": "Teacher Details"
     },
     {
-      "url": "teachers details",
-      "icon": "menu-icon tf-icons bx bx-table",
-      "name": "Teachers Form",
-      "slug": "student-admission"
+      "name": "Teacher Details",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "slug": "form-layouts",
+      "submenu": [
+        {
+          "url": "teachers details",
+          "name": "Teachers Form",
+          "slug": "teacher details"
+        },
+        {
+          "url": "view teachers",
+          "name": "View Teachers",
+          "slug": "view teachers"
+        }
+      ]
     },
     {
-      "url": "view teachers",
-      "icon": "menu-icon tf-icons bx bx-table",
-      "name": "View Teachers",
-      "slug": "student-admission"
+      "menuHeader": "Class details"
+    },
+    {
+      "name": "Class Details",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "slug": "form-layouts",
+      "submenu": [
+        {
+          "url": "class details",
+          "name": "Manage Classes",
+          "slug": "manage classes"
+        },
+        {
+          "url": "manage sections",
+          "name": "Manage Sections",
+          "slug": "manage sections"
+        },
+        {
+          "url": "manage subject",
+          "name": "Manage Subjects",
+          "slug": "manage subjects"
+        },
+        {
+          "url": "class routines",
+          "name": "Manage class routines",
+          "slug": "student-admission"
+        },
+        {
+          "url": "class attendance",
+          "name": "Attendance",
+          "slug": "class attendance"
+        }
+      ]
+    },
+    {
+      "url": "accounting",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "name": "Accounting",
+      "slug": "accounting"
+    },
+    {
+      "url": "exam section",
+      "icon": "menu-icon tf-icons bx bx-detail",
+      "name": "Exam schedule",
+      "slug": "exam section"
     }
   ]
 }
